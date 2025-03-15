@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
-import { Tooltip as ReactTooltip } from "react-tooltip";
+// import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
 import {
-  skillsDataCMS,
+  // skillsDataCMS,
   skillsDataDesign,
-  skillsDataWeb,
+  // skillsDataWeb,
 } from "../assets/lib/data";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
@@ -43,36 +43,36 @@ const TechStack: React.FC = () => {
               opacity: opacityProgess,
             }}
           >
-            <p className="font-black mb-6">
-              <span className="text-[--orange]">&lt;</span>Skills
-              <span className="text-[--orange]">/&gt;</span>
-            </p>
+            {/*<p className="font-black mb-6">*/}
+            {/*  <span className="text-[--orange]">&lt;</span>Skills*/}
+            {/*  <span className="text-[--orange]">/&gt;</span>*/}
+            {/*</p>*/}
             <h2>
               {language === "DE"
-                ? "Meine Techstack und Skills"
-                : "My TechStack and Skills"}
+                ? "Partner"
+                : "Partner"}
             </h2>
           </motion.div>
         </div>
         <div className="flex gap-40 justify-center max-lg:flex-col">
-          <div className="w-1/3 max-lg:w-full">
-            <SkillSection skillsData={skillsDataWeb} theme={theme} />
-          </div>
+          {/*<div className="w-1/3 max-lg:w-full">*/}
+          {/*  <SkillSection skillsData={skillsDataWeb} theme={theme} />*/}
+          {/*</div>*/}
           <div className="flex flex-col h-[inherit]  justify-around max-lg:gap-40">
             <SkillSection skillsData={skillsDataDesign} theme={theme} />
-            <SkillSection skillsData={skillsDataCMS} theme={theme} />
+            {/*<SkillSection skillsData={skillsDataCMS} theme={theme} />*/}
           </div>
         </div>
       </section>
-      <ReactTooltip
-        place="top"
-        id="my-tooltip"
-        style={{
-          fontSize: "1.5rem",
-          zIndex: 10,
-          backgroundColor: "var(--orange)",
-        }}
-      />
+      {/*<ReactTooltip*/}
+      {/*  place="top"*/}
+      {/*  id="my-tooltip"*/}
+      {/*  style={{*/}
+      {/*    fontSize: "1.5rem",*/}
+      {/*    zIndex: 10,*/}
+      {/*    backgroundColor: "var(--orange)",*/}
+      {/*  }}*/}
+      {/*/>*/}
     </React.Fragment>
   );
 };

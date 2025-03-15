@@ -32,17 +32,17 @@ import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
-import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
+import {GoHome, GoMail, GoPerson, GoStack} from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
+    de: "Hi, ich bin Kammmerer",
     en: "Hi, I'm Alpay",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "Immobilien Mogul",
   description: {
     de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
     en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
@@ -256,7 +256,7 @@ export const skillsDataWeb = [
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Design",
+    skillsTitle: "Partner",
     skills: [
       { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
       {
@@ -298,9 +298,7 @@ export const skillsDataCMS = [
 
 export const navLinks = [
   { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
+  { de: "Partner", en: "Partner", hash: "#skills", icon: GoPerson },
   { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 

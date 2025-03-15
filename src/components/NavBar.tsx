@@ -83,9 +83,7 @@ const NavBar: React.FC = () => {
         aria-aria-current={link}
       >
         <span>
-          {leftArrow}
           {children}
-          {rightArrow}
         </span>
       </NavLink>
     );
@@ -109,9 +107,7 @@ const NavBar: React.FC = () => {
             <CustomNavLink key={index} link={link.hash} linkEn={link.en}>
               {link.en === activeSection ? (
                 <div>
-                  <span className="text-[--orange] absolute -left-5 top-0">
-                    &lt;
-                  </span>
+
                   {language === "DE" ? link.de : link.en}
                   {/* {link.de.toLocaleUpperCase()} */}
                 </div>
