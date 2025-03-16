@@ -5,7 +5,7 @@ import ScrollToAnchor from "./Listener";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
-import LanguageSwitch from "./LanguageSwitch";
+// import LanguageSwitch from "./LanguageSwitch";
 
 const NavBar: React.FC = () => {
   const { theme } = useTheme();
@@ -62,17 +62,17 @@ const NavBar: React.FC = () => {
       ? "transition-all duration-200 relative"
       : "opacity-20 transition-all duration-700";
 
-    const leftArrow = isLinkActive && (
-      <span className="text-[--orange] absolute -left-5 top-0 max-lg:hidden">
-        &lt;
-      </span>
-    );
+    // const leftArrow = isLinkActive && (
+    //   <span className="text-[--orange] absolute -left-5 top-0 max-lg:hidden">
+    //     &lt;
+    //   </span>
+    // );
 
-    const rightArrow = isLinkActive && (
-      <span className="text-[--orange] absolute top-0 -right-10 max-lg:hidden">
-        /&gt;
-      </span>
-    );
+    // const rightArrow = isLinkActive && (
+    //   <span className="text-[--orange] absolute top-0 -right-10 max-lg:hidden">
+    //     /&gt;
+    //   </span>
+    // );
 
     return (
       <NavLink
@@ -125,7 +125,7 @@ const NavBar: React.FC = () => {
               )}
             </CustomNavLink>
           ))}
-          <LanguageSwitch />
+          {/*<LanguageSwitch />*/}
         </nav>
       )}
       {isMobileMenuActive && (
@@ -159,7 +159,7 @@ const NavBar: React.FC = () => {
               )}
             </CustomNavLink>
           ))}
-          <LanguageSwitch />
+          {/*<LanguageSwitch />*/}
         </nav>
       )}
     </React.Fragment>

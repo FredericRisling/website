@@ -174,169 +174,50 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
   return (
     <React.Fragment>
       <section
-        className="contact-container w-full min-[1921px]:px-[55rem] mt-16"
+        className="contact-container w-full min-[1921px]:px-[55rem] mt-16 h-screen pt-32 scroll-mt-20"
         id="contact"
       >
         <div
           className="title-container flex flex-col gap-6 justify-center items-center py-16  max-lg:p-16"
           ref={ref}
         >
-          <motion.div
-            ref={animationReference}
-            style={{
-              scale: scaleProgess,
-              opacity: opacityProgess,
-              textAlign: "center",
-            }}
-          >
-            <p className="text-[--black] mb-6">
-              {/*<span className="text-[--orange]">&lt;</span>*/}
-              {language === "DE" ? contactData.title.de : contactData.title.en}
-              {/*<span className="text-[--orange]">/&gt;</span>*/}
-            </p>
 
-            <h2 className="text-[--black] text-center">
-              {language === "DE"
-                ? contactData.description.de
-                : contactData.description.en}
-            </h2>
-          </motion.div>
+
         </div>
-        <div className="flex flex-row justify-center items-start px-32 pt-32 mb-32 max-lg:flex-col max-lg:p-10">
-          {/*<div className="w-1/2  bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all  quote-outer-container text-left max-lg:hidden cursor-progress">*/}
-          {/*  /!*<Highlight*!/*/}
-          {/*  /!*  code={codeSnippet}*!/*/}
-          {/*  /!*  language="tsx"*!/*/}
-          {/*  /!*  theme={themes.nightOwl}*!/*/}
-          {/*  /!*>*!/*/}
-          {/*  /!*  {({ className, style, tokens, getLineProps, getTokenProps }) => (*!/*/}
-          {/*  /!*    <pre className={`${className} text-4xl `} style={style}>*!/*/}
-          {/*  /!*      {tokens.map((line, i) => (*!/*/}
-          {/*  /!*        <div {...getLineProps({ line, key: i })}>*!/*/}
-          {/*  /!*          {line.map((token, key) => (*!/*/}
-          {/*  /!*            <span {...getTokenProps({ token, key })} />*!/*/}
-          {/*  /!*          ))}*!/*/}
-          {/*  /!*        </div>*!/*/}
-          {/*  /!*      ))}*!/*/}
-          {/*  /!*    </pre>*!/*/}
-          {/*  /!*  )}*!/*/}
-          {/*  /!*</Highlight>*!/*/}
-          {/*</div>*/}
-          {/*<form*/}
-          {/*  className="flex flex-col gap-6 justify-center items-center  px-32 w-1/2 max-lg:w-full max-lg:p-10"*/}
-          {/*  onSubmit={notifySentForm}*/}
-          {/*  autoComplete="off"*/}
-          {/*>*/}
-          {/*  {contactData.inputfields.map((input, index) => (*/}
-          {/*    <input*/}
-          {/*      key={index}*/}
-          {/*      type={input.type}*/}
-          {/*      placeholder={*/}
-          {/*        language === "DE"*/}
-          {/*          ? `${input.placeholder.de}`*/}
-          {/*          : `${input.placeholder.en}`*/}
-          {/*      }*/}
-          {/*      name={input.name}*/}
-          {/*      value={*/}
-          {/*        input.name === "name"*/}
-          {/*          ? name*/}
-          {/*          : input.name === "email"*/}
-          {/*          ? email*/}
-          {/*          : input.name === "subject"*/}
-          {/*          ? subject*/}
-          {/*          : message*/}
-          {/*      }*/}
-          {/*      required*/}
-          {/*      onFocus={() => {*/}
-          {/*        handleInputFocus(input.name);*/}
-          {/*        setLastUpdatedField(input.name);*/}
-          {/*      }}*/}
-          {/*      onMouseEnter={() => {*/}
-          {/*        handleInputFocus(input.name);*/}
-          {/*        setLastUpdatedField(input.name);*/}
-          {/*      }}*/}
-          {/*      onChange={handleInputChange}*/}
-          {/*      className={`${*/}
-          {/*        theme === "dark"*/}
-          {/*          ? "bg-[--blackblue] dark-mode-shadow "*/}
-          {/*          : "bg-[--icewhite] dark-shadow "*/}
-          {/*      }`}*/}
-          {/*    />*/}
-          {/*  ))}*/}
-          {/*  <textarea*/}
-          {/*    rows={contactData.textarea.rows}*/}
-          {/*    placeholder={*/}
-          {/*      language === "DE"*/}
-          {/*        ? `${contactData.textarea.placeholder.de}`*/}
-          {/*        : `${contactData.textarea.placeholder.en}`*/}
-          {/*    }*/}
-          {/*    name={contactData.textarea.name}*/}
-          {/*    onFocus={() => {*/}
-          {/*      handleInputFocus(contactData.textarea.name);*/}
-          {/*      setLastUpdatedField(contactData.textarea.name);*/}
-          {/*    }}*/}
-          {/*    onMouseEnter={() => {*/}
-          {/*      handleInputFocus(contactData.textarea.name);*/}
-          {/*      setLastUpdatedField(contactData.textarea.name);*/}
-          {/*    }}*/}
-          {/*    onChange={handleInputChange}*/}
-          {/*    className={`${*/}
-          {/*      theme === "dark"*/}
-          {/*        ? "bg-[--blackblue] dark-mode-shadow"*/}
-          {/*        : "bg-[--icewhite] dark-shadow"*/}
-          {/*    }`}*/}
-          {/*  />*/}
-          {/*  <div className="privacy-checkbox flex gap-16">*/}
-          {/*    <label*/}
-          {/*      className="block w-2 h-2 cursor-pointer"*/}
-          {/*      htmlFor="checkbox-label"*/}
-          {/*    >*/}
-          {/*      <input*/}
-          {/*        type="checkbox"*/}
-          {/*        required*/}
-          {/*        name="checkbox-label"*/}
-          {/*        id="checkbox-label"*/}
-          {/*      />*/}
-          {/*      <span className="checkbox"></span>*/}
-          {/*    </label>*/}
-          {/*    <p>*/}
-          {/*      {language === "DE"*/}
-          {/*        ? `${contactData.privacyOptIn.checkbox.de}`*/}
-          {/*        : `${contactData.privacyOptIn.checkbox.en}`}*/}
-          {/*    </p>*/}
-          {/*  </div>*/}
-          {/*  <p>*/}
-          {/*    {language === "DE"*/}
-          {/*      ? `${contactData.privacyOptIn.description.de}`*/}
-          {/*      : `${contactData.privacyOptIn.description.en}`}*/}
-          {/*  </p>*/}
-          {/*  <Button*/}
-          {/*    value={*/}
-          {/*      language === "DE"*/}
-          {/*        ? `${contactData.button.value.de}`*/}
-          {/*        : `${contactData.button.value.en}`*/}
-          {/*    }*/}
-          {/*    iconSVG={contactData.icon}*/}
-          {/*    buttoncolor={contactData.colors.main}*/}
-          {/*    iconcolor={contactData.colors.icon}*/}
-          {/*    type="submit"*/}
-          {/*    elementType="input"*/}
-          {/*  />*/}
-          {/*  <ToastContainer*/}
-          {/*    className="w-max text-3xl block p-3 max-lg:w-full "*/}
-          {/*    position="bottom-center"*/}
-          {/*    autoClose={5000}*/}
-          {/*    hideProgressBar={false}*/}
-          {/*    newestOnTop={false}*/}
-          {/*    closeOnClick*/}
-          {/*    rtl={false}*/}
-          {/*    pauseOnFocusLoss*/}
-          {/*    draggable*/}
-          {/*    pauseOnHover*/}
-          {/*    theme={theme}*/}
-          {/*  />*/}
-          {/*</form>*/}
+        <h2 className="text-[--black] text-center ">
+          {language === "DE"
+              ? "Kontakt"
+              : "Kontakt"}
+        </h2>
+
+
+        <div className="flex flex-col items-center justify-center mt-24 space-y-6">
+          {/* 📧 E-Mail */}
+          <a
+              href="mailto:info@markuskammerer.immo"
+              className="flex items-center justify-center bg-gray-800 w-[350px] h-[60px] rounded-lg hover:bg-gray-700 transition text-white text-3xl"
+          >
+            <span>Mail: info@markuskammerer.immo</span>
+          </a>
+
+          {/* 📞 Telefon DE */}
+          <a
+              href="tel:+491723750007"
+              className="flex items-center justify-center bg-gray-800 w-[350px] h-[60px] rounded-lg hover:bg-gray-700 transition text-white text-3xl"
+          >
+            <span>Phone DE: +49 172 3750 007</span>
+          </a>
+
+          {/* 📞 Telefon FR */}
+          <a
+              href="tel:+33663677650"
+              className="flex items-center justify-center bg-gray-800 w-[350px] h-[60px] rounded-lg hover:bg-gray-700 transition text-white text-3xl"
+          >
+            <span>Phone FR: +33 6 63 67 76 50</span>
+          </a>
         </div>
+
+
       </section>
     </React.Fragment>
   );

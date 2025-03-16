@@ -14,19 +14,24 @@ const HeaderIntro: React.FC = () => {
       ref={ref}
       id="home"
     >
-      <RadialGradient scale="scale-y-125" opacity="opacity-5" />
+      <RadialGradient scale="scale-y-125" opacity="opacity-30" />
 
+      <h1>
+        {language === "DE"
+            ? headerIntroData.title.de
+            : headerIntroData.title.en}
+      </h1>
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-1/6 drop-shadow-2xl shadow-2xl avatar-img max-lg:w-3/4"
+        className="w-2/5 shadow-2xl avatar-img max-lg:w-3/4"
       />
-      <h1>
-        {language === "DE"
-          ? headerIntroData.title.de
-          : headerIntroData.title.en}
-      </h1>
-      <h2>{headerIntroData.subtitle}</h2>
+
+      <h3>{headerIntroData.subtitle}</h3>
+      <h3>{headerIntroData.subtitle2}</h3>
+      <h3>{headerIntroData.subtitle3}</h3>
+      <h3>{headerIntroData.subtitle4}</h3>
+      <h3>{headerIntroData.subtitle5}</h3>
 
     </section>
   );

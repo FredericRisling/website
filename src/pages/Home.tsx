@@ -10,7 +10,7 @@ const LazyTechStack = lazy(() => import("../components/TechStack"));
 // const LazyAboutMe = lazy(() => import("../components/AboutMe"));
 const LazyContact = lazy(() => import("../components/Contact"));
 const LazyHeaderIntro = lazy(() => import("../components/HeaderIntro"));
-const LazyRadialGradient = lazy(() => import("../components/RadialGradient"));
+// const LazyRadialGradient = lazy(() => import("../components/RadialGradient"));
 
 const Home: React.FC = () => {
   const { theme } = useTheme();
@@ -33,18 +33,8 @@ const Home: React.FC = () => {
           <Suspense fallback={<div>Loading...</div>}>
 
             <LazyTechStack />
+            <LazyContact />
 
-            {/*<ProjectSlider />*/}
-            <div className="relative -mb-24 pb-32 -mt-10">
-              <LazyRadialGradient
-                opacity={theme === "light" ? "opacity-30" : "opacity-30"}
-                scale="scale-y-100"
-                position="-top-24"
-              />
-
-
-              <LazyContact />
-            </div>
           </Suspense>
         </main>
         <Footer />

@@ -39,10 +39,15 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Kammmerer",
+    de: "Markus Kammerer",
     en: "Hi, I'm Alpay",
   },
-  subtitle: "Immobilien Mogul",
+  subtitle: "Dipl. Sachverständiger Gutachter",
+  subtitle2: "Immobilienfachwirt- / Kaufmann",
+  subtitle3: "Expert Immobilièr",
+  subtitle4: "Agence Immobilièr",
+  subtitle5: "Marchand de biens",
+
   description: {
     de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
     en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
@@ -256,16 +261,26 @@ export const skillsDataWeb = [
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Partner",
+    skillsTitle: "Family, Friends, Partners",
     skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
+      { title: "WERA WOHNBAU", hash: "#Figma", icon: figmaicon, color: "#F24E1E", link: "www.wera-wohnbau.de"},
       {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
+        title: "SÜDBAU",
+        hash: "#Suedbau",
         icon: adobexdicon,
         color: "#FF61F6",
+        link: "www.suedbau.de"
       },
-      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+      { title: "MUSSLER", hash: "#Mussler", icon: canvaicon, color: "#00C4CC", link: "www.mussler-gruppe.de"},
+    ],
+  },
+] as const;
+
+export const skillsDataDesign2 = [
+  {
+    skillsTitle: "Luxury Properties",
+    skills: [
+      { title: "Carlton", hash: "#Carlton", icon: figmaicon, color: "#F24E1E", link: "www.carlton-international.com"},
     ],
   },
 ] as const;
@@ -308,26 +323,16 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:info@markuskammerer.immo",
+  text: "info@markuskammerer.immo",
 } as const;
 
 export const sideBarLeftSocials = [
-  {
-    link: "https://www.linkedin.com/in/alpay/",
-    icon: FiLinkedin,
-    altimgname: "linkedin",
-  },
-  {
-    link: "https://github.com/AlpayC",
-    icon: FiGithub,
-    altimgname: "github",
-  },
-  {
-    link: "mailto:myemail@com",
-    icon: FiMail,
-    altimgname: "mail",
-  },
+  // {
+  //   link: "mailto:info@markuskammerer.immo",
+  //   icon: FiMail,
+  //   altimgname: "mail",
+  // },
 ] as const;
 
 export const quotesData = [

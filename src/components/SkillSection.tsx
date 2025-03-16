@@ -55,7 +55,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
       <div
         className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
       >
-        <p className="font-black text-4xl">
+        <p className="font-black text-4sxl text-center whitespace-nowrap">
           {/*<span className="text-[--orange]">&lt;</span>*/}
           {skillsData[0].skillsTitle}
           {/*<span className="text-[--orange]">/&gt;</span>*/}
