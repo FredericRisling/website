@@ -30,15 +30,19 @@
   --darkblue: #1a2238;
   --blackblue: #0c1220;
   --orange: #ff6a3d;
+  --golden: #7b6348;
   --box-shadow-color: inherit;
   --transparent: transparent;
 }
+
+
 
 /* GENERAL STYLES */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #7b6348;
 }
 
 html {
@@ -71,8 +75,9 @@ img {
 h1 {
   font-size: 3.6rem;
   line-height: 120%;
-  font-family: "poppins-black";
-  color: var(--darkblue);
+  font-family: "poppins-bold";
+  /*color: var(--darkblue);*/
+  color: #7b6348;
 }
 h2 {
   font-size: 3rem;
@@ -84,7 +89,8 @@ button,
 h4 {
   font-size: 2.4rem;
   line-height: 120%;
-  font-family: "poppins-semibold";
+  font-family: "poppins-semibold"
+
 }
 
 label {
@@ -221,13 +227,23 @@ a {
 /* .dark a {
   color: var(--white);
 } */
-.dark p,
-.dark h1,
-.dark h2,
-.dark h3,
-.dark button {
+/*.dark p,*/
+/*.dark h1,*/
+/*.dark h2,*/
+/*.dark h3,*/
+/*.dark button {*/
+/*  color: var(--white);*/
+/*}*/
+
+.dark h1{
   color: var(--white);
 }
+
+
+/*.dark h3,*/
+/*.dark button {*/
+/*  color: var(--white);*/
+/*}*/
 .dark .privacy-checkbox .checkbox {
   border: 3px solid var(--white);
 }
@@ -409,12 +425,12 @@ a {
 }
 ::-moz-selection {
   color: var(--white);
-  background: var(--orange);
+  background: #7b6348;
 }
 
 ::selection {
   color: var(--white);
-  background: var(--orange);
+  background: #7B6348;
 }
 .avatar {
   border-radius: 50%;

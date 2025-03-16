@@ -184,7 +184,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
 
 
         </div>
-        <h2 className="text-[--black] text-center ">
+        <h2 className="text-[--black] text-center text-golden">
           {language === "DE"
               ? "Kontakt"
               : "Kontakt"}

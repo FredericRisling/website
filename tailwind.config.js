@@ -15,6 +15,7 @@ export default {
         tastycolor: "#70B9BE",
         silentmooncolor: "#FFD5BD",
         instorcolor: "#E3964A",
+        golden: "#7B6348"
       },
     },
   },

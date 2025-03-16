@@ -32,11 +32,7 @@ export default function ThemeContextProvider({
     const localTheme = window.localStorage.getItem(
       THEME_STORAGE_KEY
     ) as Theme | null;
-    const preferredColorScheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches
-      ? "dark"
-      : "light";
+    const preferredColorScheme = "dark";
     const initialTheme = localTheme || preferredColorScheme;
 
     setTheme(initialTheme);

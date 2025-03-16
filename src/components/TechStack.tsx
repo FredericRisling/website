@@ -27,7 +27,7 @@ const TechStack: React.FC = () => {
     <React.Fragment>
       <section
         className="relative tech-stack max-lg:p-16 h-screen pt-32 scroll-mt-20"
-        id="skills"
+        id="partner"
         ref={ref}
       >
         <RadialGradient
@@ -37,7 +37,7 @@ const TechStack: React.FC = () => {
         />
 
 
-        <h2 className="text-[--black] text-center">
+        <h2 className="text-center">
           {language === "DE" ? "Partner" : "Partner"}
         </h2>
         <div className="flex gap-40 justify-center max-lg:flex-col mt-24">

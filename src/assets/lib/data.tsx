@@ -263,15 +263,15 @@ export const skillsDataDesign = [
   {
     skillsTitle: "Family, Friends, Partners",
     skills: [
-      { title: "WERA WOHNBAU", hash: "#Figma", icon: figmaicon, color: "#F24E1E", link: "www.wera-wohnbau.de"},
+      { title: "WERA WOHNBAU", hash: "#Figma", icon: figmaicon, color: "#7B6348", link: "www.wera-wohnbau.de"},
       {
         title: "SÜDBAU",
         hash: "#Suedbau",
         icon: adobexdicon,
-        color: "#FF61F6",
+        color: "#7B6348",
         link: "www.suedbau.de"
       },
-      { title: "MUSSLER", hash: "#Mussler", icon: canvaicon, color: "#00C4CC", link: "www.mussler-gruppe.de"},
+      { title: "MUSSLER", hash: "#Mussler", icon: canvaicon, color: "#7B6348", link: "www.mussler-gruppe.de"},
     ],
   },
 ] as const;
@@ -280,7 +280,7 @@ export const skillsDataDesign2 = [
   {
     skillsTitle: "Luxury Properties",
     skills: [
-      { title: "Carlton", hash: "#Carlton", icon: figmaicon, color: "#F24E1E", link: "www.carlton-international.com"},
+      { title: "Carlton", hash: "#Carlton", icon: figmaicon, color: "#7B6348", link: "www.carlton-international.com"},
     ],
   },
 ] as const;
@@ -313,7 +313,7 @@ export const skillsDataCMS = [
 
 export const navLinks = [
   { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Partner", en: "Partner", hash: "#skills", icon: GoPerson },
+  { de: "Partner", en: "Partner", hash: "#partner", icon: GoPerson },
   { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 

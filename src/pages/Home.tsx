@@ -3,6 +3,7 @@ import Layout from "../layout/layout";
 import Footer from "../components/Footer";
 import { useTheme } from "../context/theme-context";
 import { ScrollProgress } from "../components/ScrollProgress";
+import Divider from "../components/Divider.tsx";
 // import Divider from "../components/Divider";
 // import ProjectSlider from "../components/ProjectSlider";
 
@@ -21,7 +22,7 @@ const Home: React.FC = () => {
         <header className="h-screen">
           <ScrollProgress
             position={"left"}
-            color={"white"}
+            color={"golden"}
             height={10}
             smoothness={true}
           />
@@ -31,8 +32,22 @@ const Home: React.FC = () => {
         </header>
         <main className="relative">
           <Suspense fallback={<div>Loading...</div>}>
+            <Divider
+                thickness="0.25rem"
+                direction="middle"
+                color="gold"
+                height="small"
+                dividerStyle="solid"
+            />
 
             <LazyTechStack />
+            <Divider
+                thickness="0.25rem"
+                direction="middle"
+                color="gold"
+                height="small"
+                dividerStyle="solid"
+            />
             <LazyContact />
 
           </Suspense>
