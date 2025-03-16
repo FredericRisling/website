@@ -24,7 +24,7 @@ const HeaderIntro: React.FC = () => {
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-2/5 shadow-2xl avatar-img max-lg:w-3/4"
+        className="w-2/5 shadow-2xl avatar-img max-lg:w-3/4 mb-3"
       />
 
       <h3>{headerIntroData.subtitle}</h3>

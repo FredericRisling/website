@@ -74,28 +74,30 @@ img {
 /* GENERAL FONT STYLES */
 h1 {
   font-size: 3.6rem;
-  line-height: 120%;
-  font-family: "poppins-bold";
+  line-height: 150%;
+  font-family: "Didot-bold";
   /*color: var(--darkblue);*/
   color: #7b6348;
 }
 h2 {
   font-size: 3rem;
   line-height: 120%;
-  font-family: "poppins-bold";
+  font-family: "Didot-bold";
 }
 h3,
 button,
 h4 {
   font-size: 2.4rem;
   line-height: 120%;
-  font-family: "poppins-semibold"
+
+  font-family: "Didot-semibold"
 
 }
 
+
 label {
   font-size: 2rem;
-  font-family: "poppins-semibold";
+  font-family: "Didot-semibold";
 }
 
 li {
@@ -106,14 +108,14 @@ li {
 p {
   font-size: 2rem;
   line-height: 120%;
-  font-family: "poppins-regular";
+  font-family: "Didot-regular";
   color: var(--grey);
 }
 input,
 textarea {
   font-size: 2rem;
   line-height: 120%;
-  font-family: "poppins-regular";
+  font-family: "Didot-regular";
   color: black;
   padding: 2rem;
   width: 100%;
@@ -143,11 +145,11 @@ pre {
 }
 
 nav a span {
-  font-family: monospace;
+  font-family: "Didot";
 }
 
 a {
-  font-family: "poppins-semibold";
+  font-family: "Didot-semibold";
   transition: all 0.2s ease-in-out;
 }
 
