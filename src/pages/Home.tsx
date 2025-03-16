@@ -32,13 +32,13 @@ const Home: React.FC = () => {
         </header>
         <main className="relative">
           <Suspense fallback={<div>Loading...</div>}>
-            <Divider
-                thickness="0.25rem"
-                direction="middle"
-                color="gold"
-                height="small"
-                dividerStyle="solid"
-            />
+            {/*<Divider*/}
+            {/*    thickness="0.25rem"*/}
+            {/*    direction="middle"*/}
+            {/*    color="gold"*/}
+            {/*    height="small"*/}
+            {/*    dividerStyle="solid"*/}
+            {/*/>*/}
 
             <LazyTechStack />
             <Divider
