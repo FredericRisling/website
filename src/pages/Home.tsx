@@ -1,9 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import Layout from "../layout/layout";
 import Footer from "../components/Footer";
-import { useTheme } from "../context/theme-context";
 import { ScrollProgress } from "../components/ScrollProgress";
-import Divider from "../components/Divider.tsx";
+// import Divider from "../components/Divider.tsx";
 // import Divider from "../components/Divider";
 // import ProjectSlider from "../components/ProjectSlider";
 
@@ -14,7 +13,6 @@ const LazyHeaderIntro = lazy(() => import("../components/HeaderIntro"));
 // const LazyRadialGradient = lazy(() => import("../components/RadialGradient"));
 
 const Home: React.FC = () => {
-  const { theme } = useTheme();
 
   return (
     <>
@@ -39,17 +37,19 @@ const Home: React.FC = () => {
             {/*    height="small"*/}
             {/*    dividerStyle="solid"*/}
             {/*/>*/}
-
             <LazyTechStack />
-            <Divider
-                thickness="0.25rem"
-                direction="middle"
-                color="gold"
-                height="small"
-                dividerStyle="solid"
-            />
-            <LazyContact />
+          </Suspense>
 
+            {/*<Divider*/}
+            {/*    thickness="0.25rem"*/}
+            {/*    direction="middle"*/}
+            {/*    color="gold"*/}
+            {/*    height="small"*/}
+            {/*    dividerStyle="solid"*/}
+            {/*/>*/}
+
+          <Suspense fallback={<div>Loading...</div>}>
+            <LazyContact />
           </Suspense>
         </main>
         <Footer />

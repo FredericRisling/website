@@ -26,21 +26,22 @@ import webflowicon from "../../assets/icons/webflowicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
-import profilepicture from "../img/me2.webp";
+//import profilepicture from "../img/me2.webp";
+import profilepicture from "../img/MarkusKammererPrototyp.jpeg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
-import {GoHome, GoMail, GoPerson, GoStack} from "react-icons/go";
-import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import {GoHome, GoMail, GoPerson} from "react-icons/go";
+import { FiGithub, FiLink, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
     de: "Markus Kammerer",
-    en: "Hi, I'm Alpay",
+    en: "Markus Kammerer",
   },
   subtitle: "Dipl. Sachverständiger Gutachter",
   subtitle2: "Immobilienfachwirt- / Kaufmann",

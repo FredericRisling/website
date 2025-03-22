@@ -1,28 +1,18 @@
-import React, { useRef } from "react";
+import React from "react";
 // import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
 import {
-  // skillsDataCMS,
   skillsDataDesign, skillsDataDesign2,
-  // skillsDataWeb,
 } from "../assets/lib/data";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
 import SkillSection from "./SkillSection";
 import RadialGradient from "./RadialGradient";
-import { motion, useScroll, useTransform } from "framer-motion";
 
 const TechStack: React.FC = () => {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Partner");
   const { theme } = useTheme();
   const { language } = useLanguage();
-  const animationReference = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: animationReference,
-    offset: ["0 1", "1.33 1"],
-  });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <React.Fragment>
       <section
