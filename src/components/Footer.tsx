@@ -61,37 +61,6 @@ const Footer: React.FC = () => {
           </Popup>
         ))}
       </div>
-      <div className="socials flex gap-10 ">
-        {sideBarLeftSocials.map((social: SocialLink, index: number) => (
-          <Link
-            to={social.link}
-            className="block mb-2 "
-            key={index}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-current={
-              social.altimgname === "true"
-                ? social.altimgname + " button"
-                : social.altimgname + " button"
-            }
-          >
-            {typeof social.icon === "function" ? (
-              <social.icon className={`stroke-orange`} />
-            ) : (
-              <img
-                src={social.icon}
-                alt={social.altimgname}
-                style={{ stroke: social.iconcolor || "" }}
-              />
-            )}
-          </Link>
-        ))}
-      </div>
-      <div>
-        <Suspense fallback={<div>Loading...</div>}>
-          {/*<LazyServiceStatus />*/}
-        </Suspense>
-      </div>
     </footer>
   );
 };

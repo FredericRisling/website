@@ -26,7 +26,7 @@ const Home: React.FC = () => {
             smoothness={true}
           />
         </header>
-        <main className="relative">
+        <main className="flex-grow">
           <Suspense fallback={<div>Loading...</div>}>
             <LazyHeaderIntro />
           </Suspense>

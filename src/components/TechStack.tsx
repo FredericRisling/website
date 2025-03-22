@@ -21,7 +21,7 @@ const TechStack: React.FC = () => {
         ref={ref}
       >
         <RadialGradient
-          scale="scale-y-[3]"
+          scale="scale-y-[1]"
           opacity={theme === "light" ? "opacity-30" : "opacity-30"}
           position="top-[55rem]"
         />
