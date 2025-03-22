@@ -13,14 +13,13 @@ const Contact: React.FC = () => {
   return (
     <React.Fragment>
       <section
-        className="contact-container w-full min-[1921px]:px-[55rem] mt-16 h-screen pt-32 scroll-mt-20"
+        className="relative top-full contact-container h-[80vh] max-lg:h-[120vh] pt-32 scroll-mt-20"
         id="contact"
       >
         <div
           className="title-container flex flex-col gap-6 justify-center items-center py-16  max-lg:p-16"
           ref={ref}
         >
-
 
         </div>
       {/*  <Divider*/}

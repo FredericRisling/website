@@ -16,7 +16,7 @@ const TechStack: React.FC = () => {
   return (
     <React.Fragment>
       <section
-        className="relative tech-stack items-center h-2/3 max-lg:h-full pt-32 scroll-mt-20"
+        className="relative tech-stack items-center gap-10 h-[80vh] max-lg:h-[150vh] pt-32 scroll-mt-20"
         id="partner"
         ref={ref}
       >
