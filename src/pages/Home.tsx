@@ -3,6 +3,7 @@ import Layout from "../layout/layout";
 import Footer from "../components/Footer";
 import { ScrollProgress } from "../components/ScrollProgress";
 // import Divider from "../components/Divider.tsx";
+// import Divider from "../components/Divider.tsx";
 // import Divider from "../components/Divider";
 // import ProjectSlider from "../components/ProjectSlider";
 
@@ -17,26 +18,19 @@ const Home: React.FC = () => {
   return (
     <>
       <Layout>
-        <header className="h-screen">
+        <header>
           <ScrollProgress
             position={"left"}
             color={"golden"}
             height={10}
             smoothness={true}
           />
-          <Suspense fallback={<div>Loading...</div>}>
-            <LazyHeaderIntro />
-          </Suspense>
         </header>
         <main className="relative">
           <Suspense fallback={<div>Loading...</div>}>
-            {/*<Divider*/}
-            {/*    thickness="0.25rem"*/}
-            {/*    direction="middle"*/}
-            {/*    color="gold"*/}
-            {/*    height="small"*/}
-            {/*    dividerStyle="solid"*/}
-            {/*/>*/}
+            <LazyHeaderIntro />
+          </Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
             <LazyTechStack />
           </Suspense>
 

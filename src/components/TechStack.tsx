@@ -16,7 +16,7 @@ const TechStack: React.FC = () => {
   return (
     <React.Fragment>
       <section
-        className="relative tech-stack max-lg:p-16 h-screen pt-32 scroll-mt-20"
+        className="relative tech-stack items-center h-2/3 max-lg:h-full pt-32 scroll-mt-20"
         id="partner"
         ref={ref}
       >
@@ -38,7 +38,6 @@ const TechStack: React.FC = () => {
           <div className="flex flex-col h-[inherit]  justify-around max-lg:gap-40">
 
             <SkillSection skillsData={skillsDataDesign2} theme={theme} />
-            {/*<SkillSection skillsData={skillsDataCMS} theme={theme} />*/}
           </div>
         </div>
       </section>

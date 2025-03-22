@@ -4,6 +4,7 @@ import React from "react";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useLanguage } from "../context/language-context";
 import "react-toastify/dist/ReactToastify.css";
+// import Divider from "./Divider.tsx";
 
 const Contact: React.FC = () => {
   const { ref } = useSectionInView("Contact");
@@ -22,12 +23,18 @@ const Contact: React.FC = () => {
 
 
         </div>
-        <h2 className="text-[--black] text-center text-golden">
+      {/*  <Divider*/}
+      {/*    thickness="0.25rem"*/}
+      {/*    direction="middle"*/}
+      {/*    color="gold"*/}
+      {/*    height="small"*/}
+      {/*    dividerStyle="solid"*/}
+      {/*/>*/}
+        <h2 className="text-center">
           {language === "DE"
               ? "Kontakt"
               : "Kontakt"}
         </h2>
-
 
         <div className="flex flex-col items-center justify-center mt-24 space-y-6">
           {/* 📧 E-Mail */}
