@@ -5,6 +5,7 @@ interface Skill {
   hash: string;
   icon?: any;
   color?: any;
+  link?: string;
 }
 
 interface SkillCategory {
@@ -62,43 +63,49 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
         </p>
       </div>
       {skillsData[0].skills.map((skill, index) => (
-        <div
-          key={index}
-          className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem]  text-center max-lg:items-center    ${
-            theme === "dark" ? "bg-[--darkblue]" : "bg-[--icewhite]"
-          }`}
-          data-tooltip-id="my-tooltip"
-          data-tooltip-content={skill.title}
-          style={{
-            borderColor: getSkillColor(theme, skill),
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.animation = "pulse 2s infinite";
-            e.currentTarget.style.transform = "scale(1)";
-            document.documentElement.style.setProperty(
-              "--box-shadow-color",
-              `${getSkillColor(theme, skill)}b3`
-            );
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.animation = "";
-            e.currentTarget.style.transform = "";
-            document.documentElement.style.setProperty(
-              "--box-shadow-color",
-              "inherit"
-            );
-          }}
-        >
-          <img
-            src={getSkillIconSrc(theme, skill)}
-            alt={`${skill.icon}-icon`}
-            className="h-[10rem]"
-          />
-          <h3 className="max-lg:text-[2rem] min-[1024px]:hidden">
-            {skill.title}
-          </h3>
-        </div>
+          <a
+              key={index}
+              href={skill.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+          >
+            <div
+                className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem] text-center max-lg:items-center ${
+                    theme === "dark" ? "bg-[--darkblue]" : "bg-[--icewhite]"
+                }`}
+                style={{
+                  borderColor: getSkillColor(theme, skill),
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.animation = "pulse 2s infinite";
+                  e.currentTarget.style.transform = "scale(1)";
+                  document.documentElement.style.setProperty(
+                      "--box-shadow-color",
+                      `${getSkillColor(theme, skill)}b3`
+                  );
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.animation = "";
+                  e.currentTarget.style.transform = "";
+                  document.documentElement.style.setProperty(
+                      "--box-shadow-color",
+                      "inherit"
+                  );
+                }}
+            >
+              <img
+                  src={getSkillIconSrc(theme, skill)}
+                  alt={`${skill.icon}-icon`}
+                  className="h-[10rem]"
+              />
+              <h3 className="max-lg:text-[2rem] min-[1024px]:hidden">
+                {skill.title}
+              </h3>
+            </div>
+          </a>
       ))}
+
     </article>
   );
 };
