@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
   return (
     <React.Fragment>
       <section
-        className="relative top-full contact-container h-[80vh] max-lg:h-[120vh] pt-32 scroll-mt-20"
+          className="relative contact-container min-h-[60vh] max-lg:min-h-[115vh] max-s:min-h-[200vh] flex flex-col justify-end scroll-mt-20 mb-10"
         id="contact"
       >
         <div

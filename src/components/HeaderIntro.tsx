@@ -1,5 +1,5 @@
 import React from "react";
-import RadialGradient from "./RadialGradient";
+// import RadialGradient from "./RadialGradient";
 import { headerIntroData } from "../assets/lib/data";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useLanguage } from "../context/language-context";
@@ -10,11 +10,11 @@ const HeaderIntro: React.FC = () => {
 
   return (
     <section
-        className="hero flex flex-col justify-center gap-10 items-center h-[130vh] max-lg:h-[120vh]"
+        className="hero flex flex-col justify-center gap-10 items-center h-[100vh] max-lg:h-[100vh]"
       ref={ref}
       id="home"
     >
-      <RadialGradient scale="scale-y-125" opacity="opacity-30" />
+      {/*<RadialGradient scale="scale-y-1" opacity="opacity-30" />*/}
 
       <h1>
         {language === "DE"
@@ -24,7 +24,7 @@ const HeaderIntro: React.FC = () => {
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-2/6 shadow-2xl avatar-img max-lg:w-3/5 mb-3"
+        className="w-2/6 shadow-2xl avatar-img max-lg:w-3/5 mb-3 rounded-xl border-golden border-4"
       />
 
       <h3>{headerIntroData.subtitle}</h3>

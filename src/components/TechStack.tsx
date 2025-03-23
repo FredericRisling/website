@@ -7,7 +7,7 @@ import {
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
 import SkillSection from "./SkillSection";
-import RadialGradient from "./RadialGradient";
+// import RadialGradient from "./RadialGradient";
 
 const TechStack: React.FC = () => {
   const { ref } = useSectionInView("Partner");
@@ -16,15 +16,15 @@ const TechStack: React.FC = () => {
   return (
     <React.Fragment>
       <section
-        className="relative tech-stack items-center gap-10 h-[80vh] max-lg:h-[150vh] pt-32 scroll-mt-20"
+        className="relative tech-stack top-full items-center gap-10 h-[80vh] max-lg:h-[105vh] pt-32 scroll-mt-20"
         id="partner"
         ref={ref}
       >
-        <RadialGradient
-          scale="scale-y-[1]"
-          opacity={theme === "light" ? "opacity-30" : "opacity-30"}
-          position="top-[55rem]"
-        />
+        {/*<RadialGradient*/}
+        {/*  scale="scale-y-[1]"*/}
+        {/*  opacity={theme === "light" ? "opacity-30" : "opacity-30"}*/}
+        {/*  position="top-[55rem]"*/}
+        {/*/>*/}
 
 
         <h2 className="text-center">
