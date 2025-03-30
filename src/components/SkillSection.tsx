@@ -69,7 +69,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
               className="block"
           >
             <div
-                className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem] text-center max-lg:items-center ${
+                className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem] text-center items-center ${
                     theme === "dark" ? "bg-[--darkblue]" : "bg-[--icewhite]"
                 }`}
                 style={{
@@ -95,8 +95,11 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
               <img
                   src={getSkillIconSrc(theme, skill)}
                   alt={`${skill.icon}-icon`}
-                  className={`h-[10rem] 
-                    ${skill.hash === "#Mussler" ? "h-[5rem] " : ""}
+                  className={`
+                    ${skill.hash === "#Wera" ? "h-[11.5rem] " : ""}
+                    ${skill.hash === "#Suedbau" ? "w-[9rem] " : ""}
+                    ${skill.hash === "#Mussler" ? "h-[100%] " : ""}
+                    ${skill.hash === "#Carlton" ? "h-[10rem]" : ""}
                   `}
               />
             </div>

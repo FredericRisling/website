@@ -267,7 +267,7 @@ export const skillsDataDesign = [
   {
     skillsTitle: "Family, Friends, Partners",
     skills: [
-      { title: "", hash: "#Figma", icon: werabauicon, color: "#7B6348", link: "https://www.wera-wohnbau.de"},
+      { title: "", hash: "#Wera", icon: werabauicon, color: "#7B6348", link: "https://www.wera-wohnbau.de"},
       {
         title: "",
         hash: "#Suedbau",
