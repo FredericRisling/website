@@ -31,8 +31,8 @@ const Contact: React.FC = () => {
       {/*/>*/}
         <h2 className="text-center">
           {language === "DE"
-              ? "Kontakt"
-              : "Kontakt"}
+              ? "KONTAKT"
+              : "KONTAKT"}
         </h2>
 
         <div className="flex flex-col items-center justify-center mt-24 space-y-6">

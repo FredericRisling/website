@@ -43,8 +43,8 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Markus Kammerer",
-    en: "Markus Kammerer",
+    de: "MARKUS KAMMERER",
+    en: "MARKUS KAMMERER",
   },
   subtitle: "Dipl. Sachverständiger Gutachter",
   subtitle2: "Immobilienfachwirt- / Kaufmann",

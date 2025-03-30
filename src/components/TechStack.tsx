@@ -28,7 +28,7 @@ const TechStack: React.FC = () => {
 
 
         <h2 className="text-center">
-          {language === "DE" ? "Partner" : "Partner"}
+          {language === "DE" ? "PARTNER" : "PARTNER"}
         </h2>
         <div className="flex gap-40 justify-center max-lg:flex-col mt-24">
 
