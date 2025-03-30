@@ -1,5 +1,8 @@
-import adobexdicon from "../../assets/icons/adobexdicon.svg";
 import canvaicon from "../../assets/icons/canvaicon.svg";
+import carltonicon from "../../assets/icons/CarltonLogo.svg";
+import suedbauicon from "../../assets/icons/SuedbauGold.png";
+import werabauicon from "../../assets/icons/WeraGold.png";
+import musslericon from "../../assets/icons/MusslerGold.png";
 import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
@@ -264,15 +267,15 @@ export const skillsDataDesign = [
   {
     skillsTitle: "Family, Friends, Partners",
     skills: [
-      { title: "WERA WOHNBAU", hash: "#Figma", icon: figmaicon, color: "#7B6348", link: "https://www.wera-wohnbau.de"},
+      { title: "", hash: "#Figma", icon: werabauicon, color: "#7B6348", link: "https://www.wera-wohnbau.de"},
       {
-        title: "SÜDBAU",
+        title: "",
         hash: "#Suedbau",
-        icon: adobexdicon,
+        icon: suedbauicon,
         color: "#7B6348",
         link: "https://www.suedbau.de"
       },
-      { title: "MUSSLER", hash: "#Mussler", icon: canvaicon, color: "#7B6348", link: "https://www.mussler-gruppe.de"},
+      { title: "", hash: "#Mussler", icon: musslericon, color: "#7B6348", link: "https://www.mussler-gruppe.de"},
     ],
   },
 ] as const;
@@ -281,7 +284,7 @@ export const skillsDataDesign2 = [
   {
     skillsTitle: "Luxury Properties",
     skills: [
-      { title: "Carlton", hash: "#Carlton", icon: figmaicon, color: "#7B6348", link: "https://www.carlton-international.com"},
+      { title: "", hash: "#Carlton", icon: carltonicon, color: "#7B6348", link: "https://www.carlton-international.com"},
     ],
   },
 ] as const;

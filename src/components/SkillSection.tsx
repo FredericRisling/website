@@ -47,7 +47,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
 
   return (
     <article
-      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
+      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-2 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
         theme === "dark"
           ? "bg-[--blackblue] dark-mode-shadow"
           : "bg-[--icewhite] dark-shadow"
@@ -57,9 +57,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
         className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
       >
         <p className="font-black text-4sxl text-center whitespace-nowrap">
-          {/*<span className="text-[--orange]">&lt;</span>*/}
           {skillsData[0].skillsTitle}
-          {/*<span className="text-[--orange]">/&gt;</span>*/}
         </p>
       </div>
       {skillsData[0].skills.map((skill, index) => (
@@ -97,11 +95,10 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
               <img
                   src={getSkillIconSrc(theme, skill)}
                   alt={`${skill.icon}-icon`}
-                  className="h-[10rem]"
+                  className={`h-[10rem] 
+                    ${skill.hash === "#Mussler" ? "h-[5rem] " : ""}
+                  `}
               />
-              <h3 className="max-lg:text-[2rem] min-[1024px]:hidden">
-                {skill.title}
-              </h3>
             </div>
           </a>
       ))}

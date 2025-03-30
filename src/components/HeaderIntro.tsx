@@ -10,7 +10,7 @@ const HeaderIntro: React.FC = () => {
 
   return (
     <section
-        className="hero flex flex-col justify-center gap-10 items-center h-[100vh] max-lg:h-[100vh]"
+        className="hero flex flex-col justify-center gap-10 items-center h-[100vh] max-lg:h-[100vh] pt-32"
       ref={ref}
       id="home"
     >
