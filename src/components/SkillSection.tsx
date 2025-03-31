@@ -99,7 +99,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
                     ${skill.hash === "#Wera" ? "h-[11.5rem] " : ""}
                     ${skill.hash === "#Suedbau" ? "w-[9rem] " : ""}
                     ${skill.hash === "#Mussler" ? "h-[100%] " : ""}
-                    ${skill.hash === "#Carlton" ? "h-[10rem]" : ""}
+                    ${skill.hash === "#Carlton" ? "w-[13rem]" : ""}
                   `}
               />
             </div>

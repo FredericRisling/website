@@ -1,5 +1,5 @@
 import canvaicon from "../../assets/icons/canvaicon.svg";
-import carltonicon from "../../assets/icons/CarltonLogo.svg";
+import carltonicon from "../../assets/icons/logo-gold-carlton.png";
 import suedbauicon from "../../assets/icons/SuedbauGold.png";
 import werabauicon from "../../assets/icons/WeraGold.png";
 import musslericon from "../../assets/icons/MusslerGold.png";
