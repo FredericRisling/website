@@ -1,0 +1,13 @@
+import{j as r,u as l,a as i,R as m,s as x}from"./index-88c1c736.js";import{u as d}from"./hooks-74bdc558.js";const u=({skillsData:n,theme:a})=>{const o=(t,e)=>t==="dark"&&(e.title.includes("Next")||e.title.includes("Express"))?e.icon[1]:e.title!=="Next.js"&&e.title!=="Express"?e.icon:e.icon[0],c=(t,e)=>t==="dark"&&(e.title.includes("Next")||e.title.includes("Express"))?e.color[1]:e.title!=="Next.js"&&e.title!=="Express"?e.color:e.color[0];return r.jsxs("article",{className:`h-auto rounded-2xl p-16 pt-32 grid grid-cols-2 gap-10 relative z-10 max-lg:w-full max-lg:p-8  max-lg:pt-32 justify-center${a==="dark"?"bg-[--blackblue] dark-mode-shadow":"bg-[--icewhite] dark-shadow"}`,children:[r.jsx("div",{className:"absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl ",children:r.jsx("p",{className:"font-black text-4sxl text-center whitespace-nowrap",children:n[0].skillsTitle})}),n[0].skills.map((t,e)=>r.jsx("a",{href:t.link,target:"_blank",rel:"noopener noreferrer",className:"block",children:r.jsx("div",{className:`skill-item 
+                   cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem] text-center items-center 
+                   justify-center
+                   w-[18rem] h-[18rem]
+                   max-xl:w-[14rem] max-xl:h-[14rem]
+                   max-lg:w-[16rem] max-lg:h-[16rem] 
+                   
+                   ${a==="dark"?"bg-[--darkblue]":"bg-[--icewhite]"}`,style:{borderColor:c(a,t)},onMouseEnter:s=>{s.currentTarget.style.animation="pulse 2s infinite",s.currentTarget.style.transform="scale(1)",document.documentElement.style.setProperty("--box-shadow-color",`${c(a,t)}b3`)},onMouseLeave:s=>{s.currentTarget.style.animation="",s.currentTarget.style.transform="",document.documentElement.style.setProperty("--box-shadow-color","inherit")},children:r.jsx("img",{src:o(a,t),alt:`${t.icon}-icon`,className:`
+                    ${t.hash==="#Wera"?"w-[130%] max-w-none":""}
+                    ${t.hash==="#Suedbau"?"w-[66%] ":""}
+                    ${t.hash==="#Mussler"?"w-[150%] max-w-none pt-6":""}
+                    ${t.hash==="#Carlton"?"w-[100%]":""}
+                  `})})},e))]})},g=()=>{const{ref:n}=d("Partner"),{theme:a}=l(),{language:o}=i();return r.jsx(m.Fragment,{children:r.jsxs("section",{className:"relative tech-stack top-full items-center gap-10 h-[80vh] max-lg:h-[105vh] pt-32 scroll-mt-20",id:"partner",ref:n,children:[r.jsx("h2",{className:"text-center",children:"PARTNER"}),r.jsx("div",{className:"flex justify-center max-md:flex-col mt-24",children:r.jsx("div",{className:"w-1/3 max-xl:w-[40%] max-lg:w-[50%] max-md:w-full",children:r.jsx(u,{skillsData:x,theme:a})})})]})})};export{g as default};
