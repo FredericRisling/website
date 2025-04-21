@@ -47,7 +47,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
 
   return (
     <article
-      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-2 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
+      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-2 gap-10 relative z-10 max-lg:w-full max-lg:p-8  max-lg:pt-32 justify-center${
         theme === "dark"
           ? "bg-[--blackblue] dark-mode-shadow"
           : "bg-[--icewhite] dark-shadow"
@@ -69,7 +69,14 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
               className="block"
           >
             <div
-                className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem] text-center items-center ${
+                className={`skill-item 
+                   cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem] text-center items-center 
+                   justify-center
+                   w-[18rem] h-[18rem]
+                   max-xl:w-[14rem] max-xl:h-[14rem]
+                   max-lg:w-[16rem] max-lg:h-[16rem] 
+                   
+                   ${
                     theme === "dark" ? "bg-[--darkblue]" : "bg-[--icewhite]"
                 }`}
                 style={{
@@ -96,10 +103,10 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
                   src={getSkillIconSrc(theme, skill)}
                   alt={`${skill.icon}-icon`}
                   className={`
-                    ${skill.hash === "#Wera" ? "h-[11.5rem] " : ""}
-                    ${skill.hash === "#Suedbau" ? "w-[9rem] " : ""}
-                    ${skill.hash === "#Mussler" ? "h-[100%] " : ""}
-                    ${skill.hash === "#Carlton" ? "w-[13rem]" : ""}
+                    ${skill.hash === "#Wera" ? "w-[130%] max-w-none": ""}
+                    ${skill.hash === "#Suedbau" ? "w-[66%] " : ""}
+                    ${skill.hash === "#Mussler" ? "w-[150%] max-w-none pt-6" : ""}
+                    ${skill.hash === "#Carlton" ? "w-[100%]" : ""}
                   `}
               />
             </div>

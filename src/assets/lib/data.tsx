@@ -1,8 +1,8 @@
 import canvaicon from "../../assets/icons/canvaicon.svg";
 import carltonicon from "../../assets/icons/logo-gold-carlton.png";
 import suedbauicon from "../../assets/icons/SuedbauGold.png";
-import werabauicon from "../../assets/icons/WeraGold.png";
-import musslericon from "../../assets/icons/MusslerGold.png";
+import werabauicon from "../../assets/icons/WeraGold2.png";
+import musslericon from "../../assets/icons/Unbenannt.png";
 import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
@@ -265,7 +265,7 @@ export const skillsDataWeb = [
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Family, Friends, Partners",
+    skillsTitle: "",
     skills: [
       { title: "", hash: "#Wera", icon: werabauicon, color: "#7B6348", link: "https://www.wera-wohnbau.de"},
       {
@@ -276,6 +276,7 @@ export const skillsDataDesign = [
         link: "https://www.suedbau.de"
       },
       { title: "", hash: "#Mussler", icon: musslericon, color: "#7B6348", link: "https://www.mussler-gruppe.de"},
+      { title: "", hash: "#Carlton", icon: carltonicon, color: "#7B6348", link: "https://www.carlton-international.com"}
     ],
   },
 ] as const;
@@ -322,8 +323,8 @@ export const navLinks = [
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  { de: "Données personnelles", en: "Données personnelles", hash: "#imprint", data: <Imprint /> },
+  { de: "Mentions légales", en: "Mentions légales", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {

@@ -2,7 +2,7 @@ import React from "react";
 // import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
 import {
-  skillsDataDesign, skillsDataDesign2,
+  skillsDataDesign,
 } from "../assets/lib/data";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
@@ -30,15 +30,15 @@ const TechStack: React.FC = () => {
         <h2 className="text-center">
           {language === "DE" ? "PARTNER" : "PARTNER"}
         </h2>
-        <div className="flex gap-40 justify-center max-lg:flex-col mt-24">
+        <div className="flex justify-center max-md:flex-col mt-24">
 
-          <div className="w-1/3 max-lg:w-full">
+          <div className="w-600px max-xl:w-[40%] max-lg:w-[50%] max-md:w-full">
             <SkillSection skillsData={skillsDataDesign} theme={theme} />
           </div>
-          <div className="flex flex-col h-[inherit]  justify-around max-lg:gap-40">
+          {/*<div className="flex flex-col h-[inherit]  justify-around max-lg:gap-40">*/}
 
-            <SkillSection skillsData={skillsDataDesign2} theme={theme} />
-          </div>
+          {/*  <SkillSection skillsData={skillsDataDesign2} theme={theme} />*/}
+          {/*</div>*/}
         </div>
       </section>
     </React.Fragment>

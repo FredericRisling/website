@@ -73,23 +73,30 @@ img {
 
 /* GENERAL FONT STYLES */
 h1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 150%;
   /*font-family: "Didot-bold";*/
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
+  /*font-family: "Cormorant Garamond", serif;*/
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
   /*color: var(--darkblue);*/
   color: #7b6348;
+  display: inline-block;
+  transform: scaleY(2) scaleX(100%); /* ← 50% höher */
+  transform-origin: center;
 }
 h2 {
   font-size: 3rem;
   line-height: 150%;
   /*font-family: "Didot-bold";*/
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-style: normal;
   color: white;
+  transform: scaleY(1.6); /* ← 50% höher */
+  transform-origin: center;
 }
 h3,
 button,
@@ -98,7 +105,7 @@ h4 {
   line-height: 120%;
 
   /*font-family: "Didot-semibold"*/
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 50;
   font-style: normal;
 
@@ -107,7 +114,7 @@ h4 {
 
 label {
   font-size: 2rem;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 50;
   font-style: normal;
 }
@@ -120,7 +127,7 @@ li {
 p {
   font-size: 2rem;
   line-height: 120%;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 50;
   font-style: normal;
   color: var(--grey);
@@ -129,7 +136,7 @@ input,
 textarea {
   font-size: 2rem;
   line-height: 120%;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 50;
   font-style: normal;
   color: black;
@@ -161,11 +168,11 @@ pre {
 }
 
 nav a span {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
 }
 
 a {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 50;
   font-style: normal;
   transition: all 0.2s ease-in-out;

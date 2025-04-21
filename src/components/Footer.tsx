@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             trigger={
               <Link
                 to="#"
-                className="text-2xl font-bold hover:text-orange"
+                className="text-2xl font-bold hover:text-white"
               >
                 {language === "DE" ? link.de : link.en}
               </Link>
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                     }`}
                   >
                     <button
-                      className="fixed top-0 right-0 bg-orange p-4 z-10 rounded-2xl m-4 hover:bg-lightblue transition-all duration-500 dark-shadow text-white"
+                      className="fixed top-0 right-0 bg-white p-4 z-10 rounded-2xl m-4 hover:bg-lightblue transition-all duration-500 dark-shadow text-white"
                       onClick={() => {
                         close();
                       }}
